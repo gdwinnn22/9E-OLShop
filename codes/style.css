@@ -1,0 +1,55 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px black;
+}
+ul, li {
+    display: flex;
+}
+.left-nav, .loc-list, .tel-list, .email-list {
+    display: flex;
+    margin-right: 50px;
+    margin-top: 16px;
+}
+.email-span, .tel-span, .loc-span {
+    display: flex;
+}
+.email-image, .tel-image, .loc-image {
+    padding-right: 10px;
+}
+.spemduta {
+    display: block;
+    margin: 10px 0 0 10px
+}
+hr {
+    margin-top: 0;
+}
+.facebook, .instagram, .youtube {
+    padding: 3px;
+    margin: 5px;
+    margin-left: 25px;
+}
+.link-m {
+    margin: 5px;
+}
+.link {
+    box-sizing: border-box;
+    width: 20%;
+}
+.link-list {
+    margin-top: 25px;
+}
+.nav-menu {
+    border: solid 1px black;
+    background-color: black;
+    height: 100%;
+}
