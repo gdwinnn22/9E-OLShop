@@ -1,0 +1,216 @@
+
+.page-header {
+    min-height: 115vh;
+}
+
+/*= Product Top Main Navigation =*/
+
+#top-content {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    z-index: 1;
+    margin-top: 3.5rem;
+}
+
+/* Top Left Navigation Content */
+
+.top-left-content {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    z-index: 1;
+}
+
+#logo-icon {
+    padding: 2.5px 2.5px 0 2.5px;
+    margin: 2.5px -25px 0 45px;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.text-content {
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.side-content {
+    position: relative;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(0px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    border: solid 1px rgb(255, 255, 255);
+}
+.side-content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #ffffff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.side-content svg {
+    transition: transform 0.3s ease;
+    margin-bottom: -5px;
+}
+
+.top-left-content.is-hover #logo-icon,
+.top-left-content.is-hold #logo-icon {
+    transform: translateX(-30px);
+}
+
+.top-left-content.is-hover .side-content,
+.top-left-content.is-hold .side-content {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.top-left-content.is-hover .side-content::before,
+.top-left-content.is-hold .side-content::before {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+/*= Home page background =*/
+
+#bg-container {
+    border: solid 1.5px black;
+    background-color: rgb(255, 255, 255);
+    min-height: 106.35vh;
+}
+
+.bg-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  min-height: 115vh;
+  background-color: black;
+}
+
+
+/* BACKGROUND LAYER */
+
+.bg-layer {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.904),
+      rgba(0, 0, 0, 0.11)
+    );
+  position: absolute;
+  inset: -40px; /* hilangin pinggiran putih */
+  background-size: cover;
+  background-position: -1vh -10vh;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1.5s ease-out;
+
+  filter: blur(4px) brightness(0.7);
+}
+
+/* jika aktif */
+.bg-layer.active {
+  opacity: 1;
+}
+
+/*= Content Title =*/
+
+#title-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.content-title {
+    text-align: center;
+    margin: 20px;
+    letter-spacing: 0.1px;
+    color: white;
+    z-index: 1;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#title {
+    font-family: "Lexend", sans-serif;
+    margin-bottom: -10px;
+    font-weight: 900;
+    font-size: 80px;
+    letter-spacing: -2px;
+}
+
+#subtitle {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px ;
+    word-spacing: 2px;
+    font-weight: 400;
+}
+
+.button-box{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-product {
+    border: solid 5px rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 15px;
+    outline: solid 1.5px rgb(255, 255, 255);
+    padding: 0px 2px 2px 0px;
+}
+
+.btn-bg-layer {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+.show-product span{
+    color: rgb(0, 0, 0);
+    font-family: "Lexend", sans-serif;
+    font-size: 20px;
+    margin: 0 10px 0 20px;
+}
+
+.svg-rotate {
+    margin: 5px;
+    transition: transform 0.6s ease;
+    transform-origin: center;
+}
+
+.svg-rotate.is-rotate {
+    transform: rotate(810deg);
+}
+
+.show-product:hover {
+    outline: solid 2.5px rgba(0, 0, 0, 0.582);
+}
