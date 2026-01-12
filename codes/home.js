@@ -40,11 +40,11 @@ anchorLeft.addEventListener("blur", () => {
 const layers = document.querySelectorAll(".bg-layer");
 
 const images = [
-  "/repositories/img.ecommerce%20-%20backup/bg1.jpeg",
-  "/repositories/img.ecommerce%20-%20backup/bg2.jpeg",
-  "/repositories/img.ecommerce%20-%20backup/bg3.jpeg",
-  "/repositories/img.ecommerce%20-%20backup/bg4.jpeg",
-  "/repositories/img.ecommerce%20-%20backup/bg5.jpeg"
+  "/img/bg1.jpeg",
+  "/img/bg2.jpeg",
+  "/img/bg3.jpeg",
+  "/img/bg4.jpeg",
+  "/img/bg5.jpeg"
 ];
 
 let currentImage = 0;
@@ -73,3 +73,12 @@ setInterval(() => {
 
   activeLayer = nextLayer;
 }, 8000); // ganti tiap 8 detik
+
+//rotate arrow button
+
+const buttonClicked = document.getElementById("rotateTrigger")
+const rotateSVG = document.getElementById("rotateSVG")
+
+buttonClicked.addEventListener("mouseenter", () => {
+  rotateSVG.classList.toggle("is-rotate")
+})
