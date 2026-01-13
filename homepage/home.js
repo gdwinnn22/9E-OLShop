@@ -62,8 +62,8 @@ setInterval(() => {
   layers[nextLayer].style.backgroundImage =
   `linear-gradient(
      to bottom,
-     rgba(0, 0, 0, 0.95),
-     rgba(0, 0, 0, 0.1)
+     rgba(0, 0, 0, 0.9),
+     rgba(0, 0, 0, 0.03)
    ),
    url(${images[currentImage]})`;
 
