@@ -57,7 +57,6 @@ window.addEventListener("scroll", () => {
     productNavbar.classList.toggle("is-show", window.scrollY > 200);
     popupTitle.classList.toggle("is-show", window.scrollY > 300);
     hrPopup.classList.toggle("is-show", window.scrollY > 550);
-    addCart.classList.toggle("is-show", window.scrollY > 200);
   }, 50);
 });
 
@@ -159,6 +158,16 @@ const triggerCart3 = document.querySelector(".cartLogo3");
 const triggerCart4 = document.querySelector(".cartLogo4");
 const triggerCart5 = document.querySelector(".cartLogo5");
 
-triggerCart1.addEventListener("mouseenter", () => {
-  triggerCart1.classList.toggle("hover");
-})
+
+
+const triggerLogo1 = document.querySelectorAll(".card");
+
+triggerLogo1.forEach(logo => {
+  logo.addEventListener("mouseenter", () => {
+    logo.classList.add("hover");
+  });
+
+  logo.addEventListener("mouseleave", () => {
+    logo.classList.remove("hover");
+  });
+});
