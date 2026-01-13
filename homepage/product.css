@@ -375,9 +375,8 @@ hr {
 }
 
 .content {
-    justify-content: left;
     padding: 5px;
-    margin-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .font {
@@ -394,13 +393,24 @@ hr {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 5px;
     margin-left: 10px;
+    margin-bottom: 15px;
 }
 
-.description {
+.add-to-cart {
+    display: flex;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #444;
-    margin: 5px;
-    margin-left: 10px;
+    background-color: transparent;
+    padding: 0px 2px 2px 0px;
+    border: solid 1px red;
+    margin: 0;
+}
+
+.add-container {
+    background-color: black;
+    margin: 0;
+    padding: 10px;
+    color: #ffffff;
+    
 }
 
 .bg.product5{
