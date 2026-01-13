@@ -154,29 +154,52 @@ prev.onclick = () => {
 
 //animasi teks tambahkan ke keranjang saat logo cart dihover
 
-const isLogoHovered = document.querySelectorAll(".cartLogo");
-const allText = document.querySelectorAll(".addCart");
+const isLogoHovered1 = document.querySelector(".cartLogo1");
+const isLogoHovered2 = document.querySelector(".cartLogo2");
+const isLogoHovered3 = document.querySelector(".cartLogo3");
+const isLogoHovered4 = document.querySelector(".cartLogo4");
+const isLogoHovered5 = document.querySelector(".cartLogo5");
 
-function toggleText() {
-  allText.forEach(i => {
-    i.classList.toggle("hover");
-  });
-}
+const addCartText1 = document.querySelector(".cartText1");
+const addCartText2 = document.querySelector(".cartText2");
+const addCartText3 = document.querySelector(".cartText3");
+const addCartText4 = document.querySelector(".cartText4");
+const addCartText5 = document.querySelector(".cartText5");
 
-function removeText() {
-  allText.forEach(i => {
-    i.classList.remove("hover");
-  })
-}
+isLogoHovered1.addEventListener("mouseenter", () => {
+  addCartText1.classList.toggle("hover");
+});
+isLogoHovered1.addEventListener("mouseleave", () => {
+  addCartText1.classList.remove("hover");
+});
 
-isLogoHovered.forEach(logo => {
-  logo.addEventListener("mouseenter", () => {
-    toggleText();
-  })
-  logo.addEventListener("mouseleave", () => {
-    removeText();
-  })
-})
+isLogoHovered2.addEventListener("mouseenter", () => {
+  addCartText2.classList.toggle("hover");
+});
+isLogoHovered2.addEventListener("mouseleave", () => {
+  addCartText2.classList.remove("hover");
+});
+
+isLogoHovered3.addEventListener("mouseenter", () => {
+  addCartText3.classList.toggle("hover");
+});
+isLogoHovered3.addEventListener("mouseleave", () => {
+  addCartText3.classList.remove("hover");
+});
+
+isLogoHovered4.addEventListener("mouseenter", () => {
+  addCartText4.classList.toggle("hover");
+});
+isLogoHovered4.addEventListener("mouseleave", () => {
+  addCartText4.classList.remove("hover");
+});
+
+isLogoHovered5.addEventListener("mouseenter", () => {
+  addCartText5.classList.toggle("hover");
+});
+isLogoHovered5.addEventListener("mouseleave", () => {
+  addCartText5.classList.remove("hover");
+});
 
 //animasi cart saat card dihover
 
