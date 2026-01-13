@@ -112,7 +112,7 @@ html {
     transform-origin: top;
 }
 
-/* Card button */
+/* Cart button */
 
 .top-right-content {
     display: inline-flex;
@@ -205,7 +205,16 @@ html {
 
 .product-section {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.olshop-tab {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    transform: scaleX(0.9);
+    letter-spacing: -0.25px;
+    font-size: 25px;
+    margin: 20px;
 }
 
 .product-page {
