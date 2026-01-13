@@ -155,7 +155,7 @@ prev.onclick = () => {
 //animasi teks tambahkan ke keranjang saat logo cart dihover
 
 const isLogoHovered = document.querySelectorAll(".cartLogo");
-const allText = document.querySelectorAll("addCart");
+const allText = document.querySelectorAll(".addCart");
 
 function toggleText() {
   allText.forEach(i => {
