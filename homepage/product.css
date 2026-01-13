@@ -74,7 +74,7 @@ html {
     display: flex;
     align-items: center;
     text-align: center;
-    border: solid 1px rgb(255, 255, 255);
+    border: solid 1px rgb(0, 0, 0);
     position: relative;
     text-decoration: none;
     overflow: hidden;
@@ -501,6 +501,12 @@ hr {
 
 .bg.product5{
     background-image: url(http://127.0.0.1:5500/img/product5.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bg.product4 {
+    background-image: url(http://127.0.0.1:5500/img/product4.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
