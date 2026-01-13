@@ -162,7 +162,7 @@ html {
     text-decoration: none;
     overflow: hidden;
     opacity: 0;
-    transform: translateX(-10px);
+    transform: translateX(-10);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -367,13 +367,21 @@ hr {
 .card:hover {
     border: solid 1px black;
 }
+
 .addToCart {
+    border: solid 1px black;
     display: block;
     justify-content: right;
     align-items: flex-end;
 }
+.addToCart::before {
+    content: "";
+    position: absolute;
+}
 .cartLogo {
     margin: 5px 0 0 7.75rem;
+    border: solid 1px black;
+    padding: 5px;
 
     opacity: 0;
     transform: translateY(-20px);
@@ -403,8 +411,118 @@ hr {
     transform: translateX(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.cartLogo:hover .cartText1 {
+.cartText1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.cartText2 {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.cartText2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.cartText3 {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.cartText3::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.cartText4 {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.cartText4::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.cartText5 {
+    opacity: 0;
+    transform: translateX(-10);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.cartText5::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.cartLogo1.hover .cartText1 {
     opacity: 1;
+    transform: translateX(0);
+}
+.cartLogo1.hover .cartText1::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.cartLogo2.hover .cartText2 {
+    opacity: 1;
+    transform: translateX(0);
+}
+.cartLogo2.hover .cartText2::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.cartLogo3.hover .cartText3 {
+    opacity: 1;
+    transform: translateX(0);
+}
+.cartLogo3.hover .cartText3::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.cartLogo4.hover .cartText4 {
+    opacity: 1;
+    transform: translateX(0);
+}
+.cartLogo4.hover .cartText4::before {
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.cartLogo5.hover .cartText5 {
+    opacity: 1;
+    transform: translateX(0);
+}
+.cartLogo5.hover .cartText5::before {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 .bg {

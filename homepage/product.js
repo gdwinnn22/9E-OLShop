@@ -153,6 +153,12 @@ prev.onclick = () => {
   slider.scrollBy({ left: -cardWidth, behavior: "smooth" });
 };
 
+const triggerCart1 = document.querySelector(".cartLogo1");
+const triggerCart2 = document.querySelector(".cartLogo2");
+const triggerCart3 = document.querySelector(".cartLogo3");
+const triggerCart4 = document.querySelector(".cartLogo4");
+const triggerCart5 = document.querySelector(".cartLogo5");
 
-
-
+triggerCart1.addEventListener("mouseenter", () => {
+  triggerCart1.classList.toggle("hover");
+})
