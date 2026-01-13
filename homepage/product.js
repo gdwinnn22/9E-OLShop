@@ -152,22 +152,42 @@ prev.onclick = () => {
   slider.scrollBy({ left: -cardWidth, behavior: "smooth" });
 };
 
-const triggerCart1 = document.querySelector(".cartLogo1");
-const triggerCart2 = document.querySelector(".cartLogo2");
-const triggerCart3 = document.querySelector(".cartLogo3");
-const triggerCart4 = document.querySelector(".cartLogo4");
-const triggerCart5 = document.querySelector(".cartLogo5");
+//animasi teks tambahkan ke keranjang saat logo cart dihover
 
+const isLogoHovered = document.querySelectorAll(".cartLogo");
+const allText = document.querySelectorAll("addCart");
 
+function toggleText() {
+  allText.forEach(i => {
+    i.classList.toggle("hover");
+  });
+}
 
-const triggerLogo1 = document.querySelectorAll(".card");
+function removeText() {
+  allText.forEach(i => {
+    i.classList.remove("hover");
+  })
+}
 
-triggerLogo1.forEach(logo => {
+isLogoHovered.forEach(logo => {
   logo.addEventListener("mouseenter", () => {
-    logo.classList.add("hover");
+    toggleText();
+  })
+  logo.addEventListener("mouseleave", () => {
+    removeText();
+  })
+})
+
+//animasi cart saat card dihover
+
+const triggerLogo = document.querySelectorAll(".card");
+
+triggerLogo.forEach(card => {
+  card.addEventListener("mouseenter", () => {
+    card.classList.add("hover");
   });
 
-  logo.addEventListener("mouseleave", () => {
-    logo.classList.remove("hover");
+  card.addEventListener("mouseleave", () => {
+    card.classList.remove("hover");
   });
 });

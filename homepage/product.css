@@ -428,23 +428,23 @@ hr {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.cartLogo1.hover .cartText1 {
+.cartText1.hover {
     opacity: 1;
     transform: translateX(0);
 }
-.cartLogo2.hover .cartText2 {
+.cartText2.hover {
     opacity: 1;
     transform: translateX(0);
 }
-.cartLogo3.hover .cartText3 {
+.cartText3.hover {
     opacity: 1;
     transform: translateX(0);
 }
-.cartLogo4.hover .cartText4 {
+.cartText4.hover {
     opacity: 1;
     transform: translateX(0);
 }
-.cartLogo5.hover .cartText5 {
+.cartText5.hover {
     opacity: 1;
     transform: translateX(0);
 }
