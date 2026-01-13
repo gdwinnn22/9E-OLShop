@@ -371,13 +371,13 @@ hr {
     display: block;
     justify-content: right;
     align-items: flex-end;
+}
+.cartLogo {
+    margin: 5px 0 0 7.75rem;
 
     opacity: 0;
     transform: translateY(-20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
-}
-.cartLogo {
-    margin: 5px 0 0 7.75rem;
 }
 .card:hover .cartLogo {
     opacity: 1;
@@ -399,11 +399,12 @@ hr {
     font-weight: 300;
 }
 .cartText1 {
-    opacity: 1;
+    opacity: 0;
     transform: translateX(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
-
-    
+}
+.cartLogo:hover .cartText1 {
+    opacity: 1;
 }
 
 .bg {
