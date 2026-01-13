@@ -153,14 +153,6 @@ prev.onclick = () => {
   slider.scrollBy({ left: -cardWidth, behavior: "smooth" });
 };
 
-const addCartLogo = document.querySelectorAll('.cartLogo');
 
-addCartLogo.forEach(cartLogo => {
-  const addCartText = cartLogo.querySelector(".addCart");
-
-  cartLogo.addEventListener("mouseenter", () => {
-    addCartText.classList.add("show")
-  })
-})
 
 

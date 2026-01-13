@@ -379,7 +379,7 @@ hr {
 .cartLogo {
     margin: 5px 0 0 7.75rem;
 }
-.card:hover .addToCart {
+.card:hover .cartLogo {
     opacity: 1;
     transform: translateY(0);
 }
@@ -388,25 +388,22 @@ hr {
     display: flex;
     padding: 0;
 
+    border: solid 1px black;
+    background-color: black;
+    color: white;
+
     font-family: 'Lexend', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 14px;
     letter-spacing: -1px;
     font-weight: 300;
-
-    border: solid 1px black;
-    background-color: black;
-    color: white;
-
-    opacity: 0;
+}
+.cartText1 {
+    opacity: 1;
     transform: translateX(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
-}
-.addCart::before {
-    content: "";
-    transform: translateY(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
+
+    
 }
 
 .bg {
