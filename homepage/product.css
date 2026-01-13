@@ -254,6 +254,7 @@ hr {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 .product-title::before {
+    content: "";
     transform: scaleX(0);
     transform-origin: top;
     transition: transform 0.4s ease;
@@ -354,18 +355,58 @@ hr {
 
 .card {
   display: block;
-  justify-self: left;
-  align-items: first baseline;
   background-size: cover;
   background-position: center;
   scroll-snap-align: start;
   cursor: pointer;
+
   margin-bottom: 1rem;
   padding: 1px;
   border: solid 1px transparent;
 }
 .card:hover {
     border: solid 1px black;
+}
+.addToCart {
+    display: block;
+    justify-content: right;
+    align-items: flex-end;
+
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.cartLogo {
+    margin: 5px 0 0 7.75rem;
+}
+.card:hover .addToCart {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.addCart {
+    display: flex;
+    padding: 0;
+
+    font-family: 'Lexend', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: -1px;
+    font-weight: 300;
+
+    border: solid 1px black;
+    background-color: black;
+    color: white;
+
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.addCart::before {
+    content: "";
+    transform: translateY(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
 }
 
 .bg {
@@ -375,11 +416,23 @@ hr {
 }
 
 .content {
+    display: flex;
+    justify-content: space-between;
     padding: 5px;
     padding-bottom: 15px;
+    margin-left: 5px;
+}
+.row {
+    display: block;
+}
+.name {
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 0;
+    margin-left: 5px;
 }
 
-.font {
+.price {
     display: inline-block;
     transform: scaleX(0.9);
     letter-spacing: -0.25px;
@@ -388,38 +441,13 @@ hr {
     margin: 5px;
 }
 
-.name {
-    display: block;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 5px;
-    margin-left: 10px;
-    margin-bottom: 15px;
-}
-
-.add-to-cart {
-    display: flex;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: transparent;
-    padding: 0px 2px 2px 0px;
-    border: solid 1px red;
-    margin: 0;
-}
-
-.add-container {
-    background-color: black;
-    margin: 0;
-    padding: 10px;
-    color: #ffffff;
-    
-}
-
 .bg.product5{
     background-image: url(http://127.0.0.1:5500/img/product5.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.bg.product2 {
+.bg.product1 {
     background-image: url(http://127.0.0.1:5500/img/product2.jpeg);
     background-size: cover;
     background-position: center;

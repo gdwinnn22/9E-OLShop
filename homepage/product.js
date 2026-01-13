@@ -57,6 +57,7 @@ window.addEventListener("scroll", () => {
     productNavbar.classList.toggle("is-show", window.scrollY > 200);
     popupTitle.classList.toggle("is-show", window.scrollY > 300);
     hrPopup.classList.toggle("is-show", window.scrollY > 550);
+    addCart.classList.toggle("is-show", window.scrollY > 200);
   }, 50);
 });
 
@@ -151,3 +152,15 @@ next.onclick = () => {
 prev.onclick = () => {
   slider.scrollBy({ left: -cardWidth, behavior: "smooth" });
 };
+
+const addCartLogo = document.querySelectorAll('.cartLogo');
+
+addCartLogo.forEach(cartLogo => {
+  const addCartText = cartLogo.querySelector(".addCart");
+
+  cartLogo.addEventListener("mouseenter", () => {
+    addCartText.classList.add("show")
+  })
+})
+
+
