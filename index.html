@@ -1,10 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <meta http-equiv="refresh" content="0; url=homepage/index.html">
-  <title>Redirecting...</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="3; url=homepage/index.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco-Peel | Redirecting</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #474747, #888888);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .redirect-card {
+      background: #ffffff;
+      padding: 40px 32px;
+      max-width: 420px;
+      width: 90%;
+      text-align: center;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.301);
+      animation: fadeIn 0.8s ease;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: #000000;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #718096;
+      margin-bottom: 24px;
+    }
+
+    .loader {
+      width: 48px;
+      height: 48px;
+      border: 4px solid #e2e8f0;
+      border-top: 4px solid #000000;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      animation: spin 1s linear infinite;
+    }
+
+    .info {
+      font-size: 14px;
+      color: #4a5568;
+    }
+
+    .info a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .info a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <p>Mengalihkan ke homepage...</p>
+  <div class="redirect-card">
+    <div class="logo">9E OLShop</div>
+    <div class="subtitle">Inovasi Kertas Ramah Lingkungan</div>
+
+    <div class="loader"></div>
+
+    <p class="info">
+      Mengalihkan ke halaman utama...<br>
+      Jika tidak berpindah,
+      <a href="homepage/index.html">klik di sini</a>
+    </p>
+  </div>
 </body>
 </html>
