@@ -378,11 +378,6 @@ hr {
     border: solid 1px black;
 }
 
-.bg {
-    height: 300px;
-    width: 300px;
-}
-
 .content {
     position: relative;
     display: flex;
@@ -497,6 +492,11 @@ hr {
     transform: translateY(0);
 }
 
+.bg {
+    height: 300px;
+    width: 300px;
+}
+
 .bg.product5{
     background-image: url(https://gdwinnn22.github.io/9E-OLShop/img/product5.2.png);
     background-size: cover;
@@ -522,7 +522,7 @@ hr {
     background-repeat: no-repeat;
 }
 .bg.product1 {
-    background-image: url(https://gdwinnn22.github.io/9E-OLShop/img/product1.2.png);
+    background-image: url(../img/product1.2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
