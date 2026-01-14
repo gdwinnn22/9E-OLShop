@@ -37,7 +37,7 @@ a {
 .gallery-grid {
     display: grid;
     grid-template-columns: 27rem 27rem;
-    gap: 2px; /* Gap kecil khas Adidas */
+    gap: 5px; /* Gap kecil khas Adidas */
 }
 
 .img-wrapper {
@@ -75,12 +75,6 @@ a {
     letter-spacing: 1px;
 }
 
-.rating-stars {
-    font-size: 12px;
-    margin-top: 5px;
-    letter-spacing: 2px;
-}
-
 .product-title {
     font-size: 32px;
     font-weight: 700; /* Bold Italic khas Adidas */
@@ -99,50 +93,6 @@ a {
     color: #333;
 }
 
-/* --- Size Selector --- */
-.size-section {
-    margin-bottom: 30px;
-}
-
-.size-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.size-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 4 kolom */
-    gap: 0;
-    border-top: 1px solid #e6e6e6;
-    border-left: 1px solid #e6e6e6;
-}
-
-.size-btn {
-    background: #fff;
-    border: none;
-    border-right: 1px solid #e6e6e6;
-    border-bottom: 1px solid #e6e6e6;
-    height: 45px;
-    font-size: 13px;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.size-btn:hover {
-    background: #dddddd;
-}
-.size500mL.hold {
-    background: #000;
-    color: #fff;
-}
-.size1000mL.hold {
-    background: #000;
-    color: #fff;
-}
 /* --- Action Buttons --- */
 .action-buttons {
     display: flex;
@@ -175,31 +125,51 @@ a {
     transform: scale(0.98);
 }
 
+.usage-section {
+  margin-top: 40px;
+  padding: 24px;
+  border-radius: 12px;
+  background: #f8f8f8;
+  max-width: 420px;
+}
 
-/* --- Responsive Mobile --- */
-@media (max-width: 768px) {
-    .product-container {
-        flex-direction: column;
-        padding: 0;
-    }
-    
-    .product-gallery {
-        padding-right: 0;
-    }
+.usage-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #222;
+}
 
-    .gallery-grid {
-        grid-template-columns: 1fr; /* Stack gambar di mobile */
-    }
+.usage-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
 
-    .product-details {
-        padding: 20px;
-    }
+.step {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #ffffff;
+  padding: 14px 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
 
-    .navbar {
-        padding: 0 20px;
-    }
-    
-    .navbar nav {
-        display: none; /* Sembunyikan menu di mobile */
-    }
+.step-number {
+  min-width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-text {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
 }

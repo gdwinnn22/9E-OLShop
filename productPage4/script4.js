@@ -70,40 +70,45 @@ anchor.addEventListener("blur", () => {
   trigger.classList.remove("is-hover");
 });
 
-//logo kiri
+const homeTrigger = document.getElementById("homeTrigger");
+const homeAnchor = document.getElementById("textArea");
 
-const triggerLeft = document.getElementById("side-trigger");
-const anchorLeft = document.getElementById("side-text");
-
-//SVG hover
-triggerLeft.addEventListener("mouseenter", () => {
-  triggerLeft.classList.add("is-hover");
+// ==========================
+// SVG HOVER
+// ==========================
+homeTrigger.addEventListener("mouseenter", () => {
+  homeTrigger.classList.add("is-hover");
 });
 
-triggerLeft.addEventListener("mouseleave", () => {
-  if (!triggerLeft.classList.contains("is-hold")) {
-    triggerLeft.classList.remove("is-hover");
+homeTrigger.addEventListener("mouseleave", () => {
+  if (!homeTrigger.classList.contains("is-hold")) {
+    homeTrigger.classList.remove("is-hover");
   }
 });
 
-// anchor tahan animasi
-
-anchorLeft.addEventListener("mouseenter", () => {
-  triggerLeft.classList.add("is-hold");
+// ==========================
+// ANCHOR TAHAN ANIMASI
+// ==========================
+homeAnchor.addEventListener("mouseenter", () => {
+  homeTrigger.classList.add("is-hold");
 });
 
-anchorLeft.addEventListener("mouseleave", () => {
-  triggerLeft.classList.remove("is-hover");
-  triggerLeft.classList.remove("is-hold");
+homeAnchor.addEventListener("mouseleave", () => {
+  homeTrigger.classList.remove("is-hover");
+  homeTrigger.classList.remove("is-hold");
 });
 
-// accessibility keyboard
-
-anchorLeft.addEventListener("focus", () => {
-  triggerLeft.classList.add("is-hold");
+// ==========================
+// ACCESSIBILITY KEYBOARD
+// ==========================
+homeAnchor.addEventListener("focus", () => {
+  homeTrigger.classList.add("is-hold");
 });
 
-anchorLeft.addEventListener("blur", () => {
-  triggerLeft.classList.remove("is-hold");
-  triggerLeft.classList.remove("is-hover");
+homeAnchor.addEventListener("blur", () => {
+  homeTrigger.classList.remove("is-hold");
+  homeTrigger.classList.remove("is-hover");
 });
+
+
+

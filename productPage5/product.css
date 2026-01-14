@@ -99,50 +99,7 @@ a {
     color: #333;
 }
 
-/* --- Size Selector --- */
-.size-section {
-    margin-bottom: 30px;
-}
 
-.size-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.size-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 4 kolom */
-    gap: 0;
-    border-top: 1px solid #e6e6e6;
-    border-left: 1px solid #e6e6e6;
-}
-
-.size-btn {
-    background: #fff;
-    border: none;
-    border-right: 1px solid #e6e6e6;
-    border-bottom: 1px solid #e6e6e6;
-    height: 45px;
-    font-size: 13px;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.size-btn:hover {
-    background: #dddddd;
-}
-.size500mL.hold {
-    background: #000;
-    color: #fff;
-}
-.size1000mL.hold {
-    background: #000;
-    color: #fff;
-}
 /* --- Action Buttons --- */
 .action-buttons {
     display: flex;
