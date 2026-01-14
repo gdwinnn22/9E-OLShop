@@ -379,7 +379,6 @@ hr {
 }
 
 .bg {
-    background-color: rgb(0, 0, 0);
     height: 300px;
     width: 300px;
 }
@@ -497,7 +496,6 @@ hr {
     opacity: 1;
     transform: translateY(0);
 }
-
 
 .bg.product5{
     background-image: url(https://gdwinnn22.github.io/9E-OLShop/img/product5.2.png);
