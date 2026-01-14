@@ -34,10 +34,11 @@ copyElements.forEach(element => {
 
 // animasi cart
 
-const trigger = document.getElementById("cart-trigger");
+const trigger = document.getElementById("top-content");
 const anchor = document.getElementById("cart-text");
 
 //SVG hover
+
 trigger.addEventListener("mouseenter", () => {
   trigger.classList.add("is-hover");
 });

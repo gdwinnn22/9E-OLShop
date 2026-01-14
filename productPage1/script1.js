@@ -34,12 +34,13 @@ copyElements.forEach(element => {
 
 // animasi cart
 
-const trigger = document.getElementById("cart-trigger");
+const trigger = document.getElementById("top-content");
 const anchor = document.getElementById("cart-text");
 
 //SVG hover
+
 trigger.addEventListener("mouseenter", () => {
-  trigger.classList.add("is-hover");
+trigger.classList.add("is-hover");
 });
 
 trigger.addEventListener("mouseleave", () => {
@@ -57,7 +58,7 @@ anchor.addEventListener("mouseenter", () => {
 anchor.addEventListener("mouseleave", () => {
   trigger.classList.remove("is-hover");
   trigger.classList.remove("is-hold");
-});
+  });
 
 // accessibility keyboard
 
@@ -70,45 +71,50 @@ anchor.addEventListener("blur", () => {
   trigger.classList.remove("is-hover");
 });
 
-const homeTrigger = document.getElementById("homeTrigger");
-const homeAnchor = document.getElementById("textArea");
 
-// ==========================
-// SVG HOVER
-// ==========================
-homeTrigger.addEventListener("mouseenter", () => {
-  homeTrigger.classList.add("is-hover");
+//logo kiri
+
+const triggerLeft = document.getElementById("side-trigger");
+const anchorLeft = document.getElementById("side-text");
+
+//SVG hover
+triggerLeft.addEventListener("mouseenter", () => {
+  triggerLeft.classList.add("is-hover");
 });
 
-homeTrigger.addEventListener("mouseleave", () => {
-  if (!homeTrigger.classList.contains("is-hold")) {
-    homeTrigger.classList.remove("is-hover");
+triggerLeft.addEventListener("mouseleave", () => {
+  if (!triggerLeft.classList.contains("is-hold")) {
+    triggerLeft.classList.remove("is-hover");
   }
 });
 
-// ==========================
-// ANCHOR TAHAN ANIMASI
-// ==========================
-homeAnchor.addEventListener("mouseenter", () => {
-  homeTrigger.classList.add("is-hold");
+// anchor tahan animasi
+
+anchorLeft.addEventListener("mouseenter", () => {
+  triggerLeft.classList.add("is-hold");
 });
 
-homeAnchor.addEventListener("mouseleave", () => {
-  homeTrigger.classList.remove("is-hover");
-  homeTrigger.classList.remove("is-hold");
+anchorLeft.addEventListener("mouseleave", () => {
+  triggerLeft.classList.remove("is-hover");
+  triggerLeft.classList.remove("is-hold");
 });
 
-// ==========================
-// ACCESSIBILITY KEYBOARD
-// ==========================
-homeAnchor.addEventListener("focus", () => {
-  homeTrigger.classList.add("is-hold");
+// accessibility keyboard
+
+anchorLeft.addEventListener("focus", () => {
+  triggerLeft.classList.add("is-hold");
 });
 
-homeAnchor.addEventListener("blur", () => {
-  homeTrigger.classList.remove("is-hold");
-  homeTrigger.classList.remove("is-hover");
+anchorLeft.addEventListener("blur", () => {
+  triggerLeft.classList.remove("is-hold");
+  triggerLeft.classList.remove("is-hover");
 });
 
+const holdButton = document.querySelectorAll(".size-btn");
 
+holdButton.forEach(el => {
+  el.addEventListener("click", () => {
+    alert("toggle hold!")
+  })
+});
 

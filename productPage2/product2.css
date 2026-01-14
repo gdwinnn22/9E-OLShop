@@ -56,16 +56,8 @@ a {
 .product-details {
     flex: 1 1 35%; /* Lebih sempit dari gambar */
     padding: 20px 20px 20px 20px;
-    position: sticky;
     top: 80px;
     height: fit-content;
-}
-
-.product-description {
-    font-size: 18px;
-    color: #555;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .category-label {
@@ -82,7 +74,7 @@ a {
 }
 
 .product-title {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700; /* Bold Italic khas Adidas */
     text-transform: uppercase;
     margin: 10px 0;
@@ -90,47 +82,24 @@ a {
 }
 
 .product-price {
-    font-size: 22px;
+    transform: scaleX(0.9);
+    letter-spacing: -0.25px;
+    font-weight: 500;
+    font-size: 18px;
     margin-bottom: 5px;
+}
+
+.product-description {
+    font-size: 15px;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .color-label {
     font-size: 14px;
     color: #333;
 }
-
-/* --- Action Buttons --- */
-.action-buttons {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.btn-add-to-bag {
-    flex-grow: 1;
-    background: #000;
-    color: #fff;
-    border: 1px solid #000;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: transform 0.1s;
-}
-
-.btn-add-to-bag:hover {
-    color: #ccc;
-}
-
-.btn-add-to-bag:active {
-    transform: scale(0.98);
-}
-
 
 .usage-section {
   margin-top: 40px;

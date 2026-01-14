@@ -95,32 +95,14 @@ html {
     z-index: -1;
 }
 
-.home-button.is-hover #logo-icon,
-.home-button.is-hold #logo-icon {
-    transform: translateX(-30px);
-}
-
-.home-button.is-hover .text-area,
-.home-button.is-hold .text-area {
+#backHome:hover .text-area {
     opacity: 1;
     transform: translateX(0);
 }
 
-.home-button.is-hover .text-area::before,
-.home-button.is-hold .text-area::before {
+#backHome:hover .text-area::before {
     transform: scaleX(1);
     transform-origin: top;
-}
-
-/* Cart button */
-
-.top-right-content {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    z-index: 1;
-    margin-right: 4rem;
 }
 
 /* SVG */
@@ -128,73 +110,12 @@ html {
 #cart-icon {
     display: flex;
     align-items: center;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.5s ease, transform 0.3s ease;
-}
-
-#cart-icon::before {
-    transform: scaleX(0);
-    transform-origin: top;
-    transition: transform 0.4s ease;
-    opacity: 0;
+    opacity: 1;
+    margin: 13.5px;
 }
 
 .cart-color {
     fill: currentColor;
-}
-
-/* anchor text */
-
-.arrow-color {
-    fill: currentColor;
-}
-
-.cart-text-content {
-    color: rgb(255, 255, 255);
-    padding: 6px 12px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.text-slide {
-    border: solid 1px black;
-    position: relative;
-    text-decoration: none;
-    overflow: hidden;
-    opacity: 0;
-    transform: translateX(-10);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-/* bg text slide */
-
-.text-slide::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: #000000;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease;
-    z-index: -1;
-}
-/* ===== AKTIF (hover SVG atau anchor hold) ===== */
-
-.top-right-content.is-hover .text-slide,
-.top-right-content.is-hold .text-slide {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.top-right-content.is-hover .text-slide::before,
-.top-right-content.is-hold .text-slide::before {
-    transform: scaleX(1);
-    transform-origin: left;
-}
-
-.top-right-content.is-show #cart-icon {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 /* product page */
@@ -205,7 +126,6 @@ html {
 
 .product-section {
     display: flex;
-    justify-content: space-between;
 }
 
 .olshop-tab {
@@ -214,7 +134,7 @@ html {
     transform: scaleX(0.9);
     letter-spacing: -0.25px;
     font-size: 25px;
-    margin: 20px;
+    margin: 20px 20px 20px -20px;
 }
 
 .product-page {
@@ -440,8 +360,9 @@ hr {
 }
 
 .addCart {
-    display: block;
+    display: flex;
     text-align: center;
+    align-items: center;
 
     border: solid 1px black;
     background-color: #000;
@@ -450,7 +371,8 @@ hr {
     font-size: 13px;
 
     width: 81.75px;
-    padding: 5px 6px 5px 5px;
+    padding: 5px;
+    padding-right: 10px;
 
     transform: translateY(10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
