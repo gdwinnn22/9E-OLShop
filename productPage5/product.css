@@ -1,0 +1,162 @@
+/* --- Reset & Base Styles --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #000;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.logo svg path { fill: #fff; }
+
+/* --- Main Layout --- */
+.product-container {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+/* --- Kolom Kiri: Galeri --- */
+.product-gallery {
+    flex: 1 1 60%;
+    padding-right: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 27rem 27rem;
+    gap: 2px; /* Gap kecil khas Adidas */
+}
+
+.img-wrapper {
+    background: #f5f5f5;
+    cursor: crosshair; /* Efek zoom cursor */
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    mix-blend-mode: multiply; /* Agar background gambar menyatu */
+}
+
+/* --- Kolom Kanan: Details --- */
+.product-details {
+    flex: 1 1 35%; /* Lebih sempit dari gambar */
+    padding: 20px 20px 20px 20px;
+    position: sticky;
+    top: 80px;
+    height: fit-content;
+}
+
+.product-description {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.category-label {
+    font-size: 12px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.rating-stars {
+    font-size: 12px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.product-title {
+    font-size: 32px;
+    font-weight: 700; /* Bold Italic khas Adidas */
+    text-transform: uppercase;
+    margin: 10px 0;
+    line-height: 1;
+}
+
+.product-price {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.color-label {
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* --- Action Buttons --- */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-add-to-bag {
+    flex-grow: 1;
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.btn-add-to-bag:hover {
+    color: #ccc;
+}
+
+.btn-add-to-bag:active {
+    transform: scale(0.98);
+}
+
+
+/* --- Responsive Mobile --- */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .product-gallery {
+        padding-right: 0;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Stack gambar di mobile */
+    }
+
+    .product-details {
+        padding: 20px;
+    }
+
+    .navbar {
+        padding: 0 20px;
+    }
+    
+    .navbar nav {
+        display: none; /* Sembunyikan menu di mobile */
+    }
+}

@@ -1,0 +1,150 @@
+
+hr {
+    margin: 0;
+}
+
+/*= Product Top Main Navigation =*/
+
+#top-content {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    z-index: 1;
+    padding: 10px;
+}
+
+/* Back To Home Page */
+
+.home-icon svg {
+    margin: 5px 0 0 10px;
+}
+
+.home-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.text-content-home {
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+    padding-left: 12.5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 2;
+}
+
+.text-area svg {
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+.text-area {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: solid 1px rgb(0, 0, 0);
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(0px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 2;
+}
+
+.text-area::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #000000;
+    transform: scaleX(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.home-button.is-hover #logo-icon,
+.home-button.is-hold #logo-icon {
+    transform: translateX(-30px);
+}
+
+.home-button.is-hover .text-area,
+.home-button.is-hold .text-area {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.home-button.is-hover .text-area::before,
+.home-button.is-hold .text-area::before {
+    transform: scaleX(1);
+    transform-origin: top;
+}
+
+/* Top Right Navigation Content */
+
+.top-right-content {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 1;
+    padding-right: 35px;
+    margin-left: -50px;
+}
+
+/* SVG */
+
+#cart-icon {
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    transition: transform 0.3s ease;
+    color: rgb(0, 0, 0);
+}
+.cart-color {
+    fill: currentColor;
+}
+
+/* anchor text */
+
+.cart-text-content {
+    color: rgb(255, 255, 255);
+    padding: 6px 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-slide {
+    border: solid 1px rgb(0, 0, 0);
+    margin-right: -20px;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* bg text slide */
+
+.text-slide::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #111;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+/* ===== AKTIF (hover SVG atau anchor hold) ===== */
+
+.top-right-content.is-hover .text-slide,
+.top-right-content.is-hold .text-slide {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.top-right-content.is-hover .text-slide::before,
+.top-right-content.is-hold .text-slide::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
