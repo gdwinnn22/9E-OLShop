@@ -40,6 +40,5 @@ homeAnchor.addEventListener("blur", () => {
 
 //animasi hold tombol ukuran
 
-const sizeBtn500mL = document.querySelector(".sizeBtn500mL");
-const sizeBtn1000ml = document.querySelector(".sizeBtn1000mL");
+
 
