@@ -41,7 +41,7 @@ html {
 }
 
 #product-navbar-margin {
-    margin-left: 8rem;
+    margin-left: 7rem;
 }
 
 .page-2 {
@@ -334,14 +334,14 @@ hr {
     color: hsla(0, 0%, 27%, 0.897);
 }
 
-.addToCart {
+.specification {
     margin-left: auto;
     position: relative;
     justify-content: right;
     align-items: flex-end;
 
 }
-.cartLogo {
+.enterLogo {
     position: absolute;
     position: relative;
     display: inline;
@@ -354,12 +354,12 @@ hr {
     transform: translateY(-20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.card.hover .cartLogo {
+.card:hover .enterLogo {
     opacity: 1;
     transform: translateY(0);
 }
 
-.addCart {
+.enterSpecification {
     display: flex;
     text-align: center;
     align-items: center;
@@ -377,39 +377,39 @@ hr {
     transform: translateY(10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.cartText1 {
+.enterText1 {
     opacity: 0;
 }
-.cartText2 {
+.enterText2 {
     opacity: 0;
 }
-.cartText3 {
+.enterText3 {
     opacity: 0;
 }
-.cartText4 {
+.entertText4 {
     opacity: 0;
 }
-.cartText5 {
+.enterText5 {
     opacity: 0;
 }
 
-.cartText1.hover {
+.enterText1.hover {
     opacity: 1;
     transform: translateY(0);
 }
-.cartText2.hover {
+.enterText2.hover {
     opacity: 1;
     transform: translateY(0);
 }
-.cartText3.hover {
+.enterText3.hover {
     opacity: 1;
     transform: translateY(0);
 }
-.cartText4.hover {
+.enterText4.hover {
     opacity: 1;
     transform: translateY(0);
 }
-.cartText5.hover {
+.enterText5.hover {
     opacity: 1;
     transform: translateY(0);
 }
@@ -420,25 +420,25 @@ hr {
 }
 
 .bg.product5{
-    background-image: url(https://gdwinnn22.github.io/9E-OLShop/img/product5.2.png);
+    background-image: url(../img/product5.2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .bg.product4 {
-    background-image: url(https://gdwinnn22.github.io/9E-OLShop/img/product4.4.png);
+    background-image: url(../img/product4.4.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .bg.product3 {
-    background-image: url(https://gdwinnn22.github.io/9E-OLShop/img/product3.jpeg);
+    background-image: url(../img/product3.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .bg.product2 {
-    background-image: url(https://gdwinnn22.github.io/9E-OLShop/img/product2.5.png);
+    background-image: url(../img/product2.5.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

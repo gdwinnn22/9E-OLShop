@@ -3,7 +3,7 @@ hr {
     margin: 0;
 }
 
-/*= Product Top Main Navigation =*/
+/*= Top Main Navigation =*/
 
 #top-content {
     display: flex;
@@ -43,8 +43,6 @@ hr {
 #top-content:hover .product-section {
     background-color: #303030;
 }
-
-/* Top Right Navigation Content */
 
 .top-right-content {
     display: flex;
