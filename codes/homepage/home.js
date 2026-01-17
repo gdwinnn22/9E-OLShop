@@ -40,11 +40,11 @@ anchorLeft.addEventListener("blur", () => {
 const layers = document.querySelectorAll(".bg-layer");
 
 const images = [
-  "../img/background/bg1.webp",
-  "../img/background/bg2.webp",
-  "../img/background/bg3.webp",
-  "../img/background/bg4.webp",
-  "../img/background/bg5.webp"
+  "../../img/background/bg1.webp",
+  "../..//background/bg2.webp",
+  "../../img/background/bg3.webp",
+  "../../img/background/bg4.webp",
+  "../../img/background/bg5.webp"
 ];
 
 let currentImage = 0;
