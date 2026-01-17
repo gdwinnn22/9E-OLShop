@@ -12,7 +12,7 @@ Proyek ini dibuat untuk keperluan **Expo Sekolah** sebagai media presentasi digi
 ---
 
 ## 📸 Preview
-![Preview Website](https://github.com/gdwinnn22/9E-OLShop/website-gallery)
+![Preview Website](/website-gallery/)
 
 ---
 
