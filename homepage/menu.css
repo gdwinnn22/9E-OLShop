@@ -17,6 +17,11 @@ a {
     z-index: 3;
 }
 
+.navbar-row {
+    display: flex;
+    justify-content: space-between;
+}
+
 .contact-container {
     display: flex;
     justify-content: space-between;
@@ -24,13 +29,8 @@ a {
 
 .list {
     margin: 0;
-}
-
-.nav-row {
-    margin: 0;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
 }
 
 #close-btn {
@@ -44,7 +44,11 @@ a {
     width: 100%;
 }
 
-/* left-side popup-navbar */
+/* right-side popup-navbar */
+
+.list {
+    margin-top: 0.6rem;
+}
 
 ul, li {
     display: flex;
@@ -52,6 +56,7 @@ ul, li {
 .left-nav, .loc-list, .tel-list, .email-list {
     display: flex;
     margin-right: 50px;
+    margin-top: 7px;
 }
 .a-span {
     display: block;
@@ -100,6 +105,7 @@ ul, li {
     margin-left: 25px;
 }
 .link-m {
+    display: flex;
     margin: 0;
 }
 .link {
@@ -153,9 +159,6 @@ ul, li {
     z-index: 3;
     background-color: black;
 }
-.nav-menu button:hover {
-    outline: solid 1px white;
-}
 .nav-menu span {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bolder;
@@ -167,3 +170,4 @@ ul, li {
 .nav-menu svg {
     height: 45px;
 }
+

@@ -17,6 +17,12 @@ a {
     z-index: 3;
 }
 
+.navbar-row {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+}
+
 .contact-container {
     display: flex;
     justify-content: space-between;
@@ -24,13 +30,8 @@ a {
 
 .list {
     margin: 0;
-}
-
-.nav-row {
-    margin: 0;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
 }
 
 #close-btn {
@@ -44,7 +45,11 @@ a {
     width: 100%;
 }
 
-/* left-side popup-navbar */
+/* right-side popup-navbar */
+
+.list {
+    margin-top: 0.6rem;
+}
 
 ul, li {
     display: flex;
@@ -101,6 +106,7 @@ ul, li {
     margin-left: 25px;
 }
 .link-m {
+    display: flex;
     margin: 0;
 }
 .link {
